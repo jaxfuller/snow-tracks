@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+
+.app-header {
+    background-color: #5499c7;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f7f6;
+    color: #2e4053;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+    background-image: url('components/assets/background.jpg');
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.snow-medium {
+    color: orange;
+}
+
+.snow-high {
+    color: red;
+}
+
+.wind-medium {
+    color: orange;
+}
+
+.wind-high {
+    color: red;
+}
+
+.temp-cold {
+    color: #add8e6;
+}
+
+.temp-very-cold {
+    color: #0000ff;
+}
+
+
+.destination-input input, .destination-input button, select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #aeb6bf; 
+  margin: 5px;
+}
+
+.destination-input button, .remove-button {
+  background-color: #5499c7; 
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.destination-input button:hover, .remove-button:hover {
+  background-color: #2980b9; 
+}
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; 
+    list-style: none;
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.destination-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.weather-info {
+    margin-top: 10px;
 }

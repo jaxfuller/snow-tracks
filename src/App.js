@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import SnowWrapper from './components/SnowWrapper';
+
+//Main app Component, using a wrapper to clean things up.
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+          <header className="App-header">
+              <h1>SnowTracks</h1>
+          </header>
+          <SnowWrapper>
+          </SnowWrapper>
+          <footer>
+              <h4>Jackson Fuller's Capstone Project</h4>
+              <h5>Red Rocks Community College - 2023</h5>
+          </footer>
     </div>
   );
 }
